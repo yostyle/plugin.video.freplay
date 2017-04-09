@@ -152,7 +152,7 @@ else:
         url = globalvar.channels[channel][1].getVideoURL(channel, param)
         if url:
             programName = args['name'][0]
-            log.logGA(channel, param, programName)
+            # log.logGA(channel, param, programName)
             item = xbmcgui.ListItem(path=url)
             xbmcplugin.setResolvedUrl(addon_handle, True, item)
 
